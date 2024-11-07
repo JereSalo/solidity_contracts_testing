@@ -10,7 +10,7 @@ contract RevertOpcode {
             mstore(message, 0x20)      // Message length (32 bytes)
             mstore(add(message, 0x20), "Explicit REVERT opcode called") // Message content
 
-            revert(message, 0x40) // Revert with the message at memory position `message`, length 0x40 (64 bytes)        
+            revert(message, 0x40) // Revert with the message at memory position `message`, length 0x40 (64 bytes)
         }
     }
 }
